@@ -1,3 +1,4 @@
+var kattintott = false;
 var versAdatok =[
     {
         cim: " Nyúliskola",
@@ -18,6 +19,10 @@ $(function(){
 });
 
 function versek(){
+    if(kattintott === true){
+        return;
+    }
+    kattintott = true;
     $(".vers1").append("<div><h3>"+versAdatok[0].cim+"</h3><p>"+versAdatok[0].vers+"</p><p>"+versAdatok[0].szerző+"</p></div>");
     $(".vers2").append("<div><h3>"+versAdatok[1].cim+"</h3><p>"+versAdatok[1].vers+"</p><p>"+versAdatok[1].szerző+"</p></div>");
     $("header h1").text(versAdatok[0].szerző+" és "+versAdatok[1].szerző);
