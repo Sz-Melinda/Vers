@@ -3,6 +3,24 @@
 * {
   box-sizing: border-box;
 }
+.vers1{
+  border-style: solid;
+  border-width: 1px;
+  margin:2px;
+  padding-top: 10px;
+  padding: 20px;
+}
+.vers2{
+  border-style: solid;
+  border-width: 1px;
+  margin:2px;
+  padding-top: 10px;
+  padding: 20px;
+}
+h3{
+  color:#800040;
+  font-family: 'Lobster', cursive;
+}
 
 
 @media only screen and (max-width: 400px) {
